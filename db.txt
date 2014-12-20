@@ -1,0 +1,118 @@
+BASE DE DATOS APLICACION
+
+TABLAS Y PROPIEDADES
+
+USUARIOS(users)[Usuarios de sistema dos privilegios: ROLE_SUPER_ADMIN, ROLE_USER]
+	use_id                    | int(11)             | (auto_increment)
+	username                  | varchar(255)        |
+	username_canonical        | varchar(255)        |
+	email                     | varchar(255)        |
+	email_canonical           | varchar(255)        |
+	enabled                   | tinyint(1)          |
+	salt                      | varchar(255)        |
+	password                  | varchar(255)        |
+	last_login                | datetime            |
+	locked                    | tinyint(1)          |
+	expired                   | tinyint(1)          |
+	expires_at                | datetime            |
+	confirmation_token        | varchar(255)        |
+	password_requested_at     | datetime            |
+	roles                     | longtext            |
+	credentials_expired       | tinyint(1)          |
+	credentials_expire_at     | datetime            |
+
+	created_at                | datetime            |
+	update_at                 | datetime            |
+
+MEDICOS(medico|md)[Medicos | doctores]
+	md_id                     | int(11)             | (auto_increment)
+	md_user_id                | int(11)             |  relation(user_id)
+	md_firstname              | varchar(100)        |
+	md_lastname               | varchar(100)        |
+	md_date_of_birth          | date                |
+	md_num_telf               | text                |
+
+METACLINICAS(mclin)[Clinicas donde trabaja el medico]
+	mclin_id                  | int(11)             | (auto_increment)
+	mclin_md_id               | int(11)             | relation(clin_id)
+	mclin_clin_id             | int(11)             | relation(clin_id)
+
+METAESPECIALIDAD(mspc)[Especialidades del medico]
+	mspc_id                   | int(11)             | (auto_increment)
+	mspc_md_id                | int(11)             | relation(clin_id)
+	mspc_spc_id               | int(11)             | relation(spc_id)
+
+
+ESPECIALIDAD(speciality|spc)[Especialidades de medicos]
+	spc_id                    | int(11)             | (auto_increment)
+	spc_name                  | text                |
+
+CLINICAS(clinic|clin)[Clinicas de atencion]
+	clin_id                   | int(11)             | (auto_increment)
+	clin_name                 | varchar(255)        |
+	clin_lat                  | varchar(50)         | (latitud)
+	clin_lng                  | varchar(50)         | (longitud)
+	clin_addr                 | text                |
+
+PACIENTES(patient|pat)[Pacientes]
+	pat_id                    | int(11)             | (auto_increment)
+	pat_firstname             | varchar(100)        |
+	pat_lastname              | varchar(100)        |
+	pat_date_of_birth         | date                |
+	pat_created_at            | datetime            |
+
+METAPACIENTES(mpat)[Pacientes con casos de leciones y tratamiento ]
+	mpat_id                   | int(11)             | (auto_increment)
+	mpat_case_id              | int(11)             |
+	mpat_pat_id               | int(11)             |
+
+CASOS(case)[Publicar problema de caso medico, tomar fotos del paciente con leciones]
+	case_id                   | int(11)             | (auto_increment)
+	case_user_id              | int(11)             | relation(user_id)
+	case_clin_id              | int(11)             | relation(clin_id)
+	case_title                | text                |
+	case_content              | text                |
+	case_created_at           | datetime            |
+	case_update_at            | datetime            |
+	case_status               | varchar(20)         | (publish | draft)[ estatus de caso publicado o borrador]
+	comment_status            | varchar(20)         | (open | close)[estatus de comentario abierto o cerrado]
+	access_control            | varchar(20)         | (all | specialist | user)[accesibilidad
+														(all: todos los usuario),
+														(speciality: usuarios con espcialidad en especifico),
+														(user: Usuario(s) en especifico)]
+
+METACASOSUSER(mcase)[Caso disponible a traves de control de acceso para (usuario(s) en especifico)]
+	mcaseuser_id              | int(11)             | (auto_increment)
+	mcaseuser_case_id         | int(11)             | relation(case_id)
+	mcaseuser_user_id         | int(11)             | relation(user_id)
+
+METACASOSSPC(mcase)[Caso disponible a traves de control de acceso para (usuario(s) con especialidad)]
+	mcasespc_id               | int(11)             | (auto_increment)
+	mcasespc_case_id          | int(11)             | relation(case_id)
+	mcasespc_spc_id           | int(11)             | relation(spc_id)
+
+
+
+MEDIOS(media)[Imagenes de caso medico]
+	media_id                  | int(11)             | (auto_increment)
+	media_case_id             | int(11)             | relation(case_id)
+	media_mime_type           | varchar(20)         | (image/png | image/jpg)
+	media_attached_file       | longtext            | (/2014/11/foto.png)
+	media_attachment_metadata | longtext            | (serialized)
+
+COMENTARIOS(comment)[Comentarios de caso abierto]
+	comment_id                | int(11)             | (auto_increment)
+	comment_case_id           | int(11)             | relation(case_id)
+	comment_created_at        | datetime            |
+	comment_content           | text                |
+	comment_approved          | varchar(20)         |
+	comment_parent            | int(11)             |
+	comment_user_id           | int(11)             | relation(pendiente)
+
+RESULTADOS(result)[Resultados de encuenta de caso abierto a comentarios de usuarios. Cerrado opciones de calificacion y aprobacion]
+	result_id                 | int(11)             | (auto_increment)
+	result_case_id            | int(11)             | relation(case_id)
+	result_status             | varchar(20)         | (aproved | failed)[estatus de resultado ...]
+	result_title              | text                |
+	result_content            | text                |
+	result_created_at         | datetime            |

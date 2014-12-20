@@ -1,0 +1,3 @@
+app_api_admin:
+    type: rest
+    resource: '@AppBundle/Resources/config/routing_api_admin.yml'

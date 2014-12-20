@@ -1,0 +1,4 @@
+api_admin_security:
+    type: rest
+    resource: "@AppBundle/Controller/SecurityController.php"
+    prefix: /api

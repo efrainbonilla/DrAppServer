@@ -1,0 +1,21 @@
+
+# RESTController
+app_casos:
+    type: rest
+    resource: "@AppBundle/Controller/CasosRESTController.php"
+
+app_clinicas:
+    type: rest
+    resource: "@AppBundle/Controller/ClinicasRESTController.php"
+
+app_usuarios:
+    type: rest
+    resource: "@AppBundle/Controller/UserRESTController.php"
+
+# app_comentarios:
+#     type: rest
+#     resource: "@AppBundle/Controller/ComentariosRESTController.php"
+
+# app_resultados:
+#     type: rest
+#     resource: "@AppBundle/Controller/ResultadosRESTController.php"

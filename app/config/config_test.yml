@@ -1,0 +1,22 @@
+imports:
+    - { resource: config_dev.yml }
+
+framework:
+    test: ~
+    session:
+        storage_id: session.storage.mock_file
+    profiler:
+        collect: false
+
+web_profiler:
+    toolbar: false
+    intercept_redirects: false
+
+swiftmailer:
+    disable_delivery: true
+
+# Lexik JWT Authentication
+lexik_jwt_authentication:
+    private_key_path:   %kernel.root_dir%/../src/AppBundle/Tests/Fixtures/JWT/private.pem
+    public_key_path:    %kernel.root_dir%/../src/AppBundle/Tests/Fixtures/JWT/public.pem
+    pass_phrase:        testing

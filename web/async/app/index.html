@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" ng-controller="AppCtrl" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/angular-loading-bar/src/loading-bar.css">
+  <link rel="stylesheet" href="bower_components/angular-notify/dist/angular-notify.css">
+  <link rel="stylesheet" href="css/app.css"/>
+  <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+  <ul class="menu">
+    <li><a ui-sref="admin">Admin </a></li>
+  </ul>
+  <div class="container" ng-controller="MainCtrl">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="panel panel-default">
+                <div class="panel-heading">Fetched from API</div>
+
+                <table ng-table="tableParams" class="table">
+                    <tr ng-repeat="item in $data">
+                      <td data-title="'Titulo'" sortable="'caseTitle'">
+                          {{item.case_title}}
+                      </td>
+                      <td data-title="'Descripción'" sortable="'caseContent'">
+                          {{item.case_content}}
+                      </td>
+                      <td data-title="'Created Date'" sortable="'caseCreatedAt'">
+                          {{item.case_created_at | date}}
+                      </td>
+                    </tr>
+                </table>
+
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <div ui-view="main"></div>
+  <!-- <div ng-view></div> -->
+
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script type="text/ng-template" id="login.html">
+    <div class="modal-header">
+        <h4 class="modal-title">Login required</h4>
+    </div>
+    <div class="modal-body">
+        <form class="form-horizontal" role="form" ng-submit="submit(credentials)">
+            <div class="alert alert-danger" ng-if="errorMessage">
+                {{ errorMessage }}
+            </div>
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Username</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" ng-model="credentials.username" placeholder="Username" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" ng-model="credentials.password" placeholder="Password" required>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" ng-click="submit(credentials)">Login</button>
+    </div>
+  </script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+  <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+  <script src="bower_components/angular-touch/angular-touch.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <!-- <script src="bower_components/angular-route/angular-route.js"></script> -->
+
+  <script src="bower_components/angular-ui-utils/ui-utils.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="bower_components/angular-loading-bar/src/loading-bar.js"></script>
+  <script src="bower_components/angular-file-upload/angular-file-upload.js"></script>
+  <script src="bower_components/angular-notify/angular-notify.js"></script>
+
+  <script src="bower_components/angular-http-auth/src/http-auth-interceptor.js"></script>
+  <script src="bower_components/ng-table/ng-table.js"></script>
+
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/resources.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+</body>
+</html>

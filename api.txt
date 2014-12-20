@@ -1,0 +1,91 @@
+## AUTENTICACION
+
+POST /api/login_check
+
+{"username": "usuarioprueba", "password": "123456"}
+{"username": "useradmin", "password": "admin"}
+
+#REGISTRO
+POST /api/register
+
+
+## USUARIOS
+
+GET /api/users
+
+GET /api/users/1
+
+POST /api/users
+
+PUT /api/users/1
+
+
+
+## CASOS
+
+GET /api/casos
+
+GET /api/casos/1
+
+POST /api/casos
+
+{
+	"case_title": "Paciente con síntomas de enfermedad mutante 6.",
+	"case_content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+	"case_status": "publish",
+	"comment_status": "open",
+	"access_control": "all",
+	"case_clin": "4"
+}
+
+PUT /api/casos/2
+
+{
+	"case_title": "Paciente con síntomas de enfermedad mutante 2.",
+	"case_status": "publish",
+	"comment_status": "open",
+	"access_control": "all",
+	"case_clin": "3"
+}
+
+
+
+## CLINICAS
+
+GET /api/clinicas
+
+POST /api/clinicas
+
+{
+ "clin_name": "CLINICA 5 DE JULIO C.A.",
+ "clin_lat": "01010101",
+ "clin_lng": "02020202",
+ "clin_addr": "AV.77, PROLONGACIÓN AV. 5 DE JULIO N° 3C-63"
+}
+
+PUT /api/clinicas/4
+
+{
+ "clin_name": "CLINICA JOSÉ GREGORIO HERNÁNDEZ",
+ "clin_addr": "lOS OLIVOS"
+}
+
+
+
+
+
+
+
+
+
+#Other APIs
+POST http://192.168.150.1:9012/api/v0/register
+
+{
+ "username": "usuarioprueba5",
+ "password": "myclave",
+ "email": "usuario1@micorreo.com"
+}
+
+
+http://192.168.150.1:9012/api/v0/usuarioprueba

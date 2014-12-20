@@ -1,0 +1,20 @@
+app:
+    type: annotation
+    resource: "@AppBundle/Controller/DefaultController.php"
+
+app_api:
+    resource: routing_api.yml
+    prefix: /api
+
+app_api_admin:
+    resource: routing_api_admin.yml
+    prefix: /admin
+
+# Doc Api
+NelmioApiDocBundle:
+    resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
+    prefix:   /doc
+
+#FOS User routing
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"

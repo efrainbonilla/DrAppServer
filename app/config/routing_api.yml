@@ -1,0 +1,18 @@
+login_check:
+    path: /login_check
+
+get_token:
+    path: /getToken
+    defaults: { _controller: 'AppBundle:Authentication:getToken' }
+
+app_ping:
+    pattern: /ping
+    defaults: { _controller: 'AppBundle:Authentication:ping' }
+    requirements:
+        _method: HEAD|GET
+
+app_api:
+    type: rest
+    resource: '@AppBundle/Resources/config/routing_api.yml'
+    # prefix: /v1
+    # name_prefix:  api_1_ # naming collision
