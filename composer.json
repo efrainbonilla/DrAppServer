@@ -30,7 +30,10 @@
 
         "lexik/jwt-authentication-bundle": "dev-master",
         "gfreeau/get-jwt-bundle": "dev-master",
-        "sp/bower-bundle": "~0.11"
+        "sp/bower-bundle": "~0.11",
+
+        "ext-pdo": "*",
+        "ext-pdo_pgsql": "*"
 
     },
     "require-dev": {
@@ -40,6 +43,9 @@
     "scripts": {
         "post-root-package-install": [
             "SymfonyStandard\\Composer::hookRootPackageInstall"
+        ],
+        "pre-install-cmd": [
+            "AppBundle\\HerokuDatabase::populateEnvironment"
         ],
         "post-install-cmd": [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
@@ -66,7 +72,14 @@
         "symfony-web-dir": "web",
         "symfony-assets-install": "relative",
         "incenteev-parameters": {
-            "file": "app/config/parameters.yml"
+            "file": "app/config/parameters.yml",
+            "env-map": {
+                "database_host": "DATABASE_HOST",
+                "database_port": "DATABASE_PORT",
+                "database_name": "DATABASE_NAME",
+                "database_user": "DATABASE_USER",
+                "database_password": "DATABASE_PASSWORD"
+            }
         },
         "branch-alias": {
             "dev-master": "2.6-dev"
