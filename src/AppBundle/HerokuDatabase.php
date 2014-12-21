@@ -11,7 +11,7 @@ namespace AppBundle;
 use Composer\Script\Event;
 
 class HerokuDatabase {
-    public static function populateEnviroment(Event $event){
+    public static function populateEnvironment(Event $event){
         $url = getenv("DATABASE_URL");
 
         if ($url) {
