@@ -9,7 +9,7 @@
     </data-source>
     <data-source name="PostgreSQL - drapp_db@localhost" uuid="801415eb-2e69-49cd-b368-4555eac6e22a">
       <secret-storage>master_key</secret-storage>
-      <user-name>pguser</user-name>
+      <user-name>postgres</user-name>
       <schema-pattern>drapp_db.pg_catalog drapp_db.public</schema-pattern>
       <default-schemas>drapp_db.pg_catalog drapp_db.public</default-schemas>
     </data-source>

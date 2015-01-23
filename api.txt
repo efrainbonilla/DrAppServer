@@ -2,8 +2,8 @@
 
 POST /api/login_check
 
+{"username": "useradmin", "password": "123456"}
 {"username": "usuarioprueba", "password": "123456"}
-{"username": "useradmin", "password": "admin"}
 
 #REGISTRO
 POST /api/register

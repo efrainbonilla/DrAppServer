@@ -77,3 +77,10 @@ swiftmailer:
     username:  "%mailer_user%"
     password:  "%mailer_password%"
     spool:     { type: memory }
+
+sp_bower:
+    bundles:
+        AppBundle:
+            config_dir: "E:\xampp\htdocs\DrApp\src\AppBundle\Resources\config\bower"
+            asset_dir: "E:\xampp\htdocs\DrApp\src\AppBundle\Resources\public\components"
+            json_file: bower.json

@@ -1,7 +1,7 @@
 # This file is a "template" of what your parameters.yml file should look like
 parameters:
     database_driver:   pdo_pgsql
-    database_host:     127.0.0.1
+    database_host:     localhost
     database_port:     ~
     database_name:     symfony
     database_user:     root
@@ -14,7 +14,7 @@ parameters:
     mailer_user:       ~
     mailer_password:   ~
 
-    locale:            en
+    locale:            es
 
     # A secret key that's used to generate certain security-related tokens
     secret:            ThisTokenIsNotSoSecretChangeIt

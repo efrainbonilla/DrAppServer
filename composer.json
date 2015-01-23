@@ -30,7 +30,7 @@
 
         "lexik/jwt-authentication-bundle": "dev-master",
         "gfreeau/get-jwt-bundle": "dev-master",
-        "sp/bower-bundle": "~0.11",
+        "sp/bower-bundle": "0.12.*@dev",
 
         "ext-pdo": "*",
         "ext-pdo_pgsql": "*"

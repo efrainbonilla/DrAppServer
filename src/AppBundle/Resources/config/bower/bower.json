@@ -1,0 +1,6 @@
+{
+    "name": "app-bundle",
+    "dependencies": {
+        "bootstrap": "latest"
+    }
+}

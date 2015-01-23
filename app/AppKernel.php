@@ -31,6 +31,9 @@ class AppKernel extends Kernel
             new JMS\SerializerBundle\JMSSerializerBundle(),
             new Bazinga\Bundle\HateoasBundle\BazingaHateoasBundle(),
 
+            //BOWER
+            new Sp\BowerBundle\SpBowerBundle(),
+            
             //PROJECT CODE
             new AppBundle\AppBundle(),
         );
