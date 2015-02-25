@@ -80,7 +80,11 @@ swiftmailer:
 
 sp_bower:
     bundles:
-        AppBundle:
-            config_dir: "E:\xampp\htdocs\DrApp\src\AppBundle\Resources\config\bower"
-            asset_dir: "E:\xampp\htdocs\DrApp\src\AppBundle\Resources\public\components"
-            json_file: bower.json
+        AppBundle: ~
+
+    install_on_warmup: true
+    allow_root: true
+    keep_bowerrc: true
+    assetic:
+        enabled: false
+        nest_dependencies: false

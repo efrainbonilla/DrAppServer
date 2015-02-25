@@ -1,6 +1,18 @@
 {
     "name": "app-bundle",
     "dependencies": {
-        "bootstrap": "latest"
+        "bootstrap": "latest",
+        "bootstrap-material-design": "latest",
+    	"angular": "latest",
+    	"angular-bootstrap": "latest",
+
+	    "restangular": "latest",
+
+    	"ng-table": "latest",
+	    "angular-http-auth": "latest",
+	    "angular-ui-utils": "latest",
+	    "angular-ui-router": "latest",
+
+	    "angular-notify": "latest"
     }
 }
