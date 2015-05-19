@@ -1,3 +1,8 @@
-app_api_admin:
-    type: rest
-    resource: '@AppBundle/Resources/config/routing_api_admin.yml'
+# app_api_admin:
+#     type: rest
+#     resource: '@AppBundle/Resources/config/routing_api_admin.yml'
+
+easy_admin_bundle:
+    resource: "@EasyAdminBundle/Controller/"
+    type:     annotation
+    # prefix:   /admin

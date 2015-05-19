@@ -70,7 +70,8 @@ class CasosRESTController extends VoryxController
         try {
 
             $request = $this->container->get('request');
-            $user = $this->getUser();
+
+            $user = $this->getUserData();
 
             $page = $paramFetcher->get('page');
             $offset = $paramFetcher->get('offset');
@@ -78,9 +79,11 @@ class CasosRESTController extends VoryxController
             $order_by = $paramFetcher->get('sorting');
             $filters = !is_null($paramFetcher->get('filters')) ? $paramFetcher->get('filters') : array();//WHERE
 
-            if ($this->get('security.context')->isGranted('ROLE_USER') ) {
-                $filters['caseUser'] = $user->getId();
-            }
+            // if ($this->get('security.context')->isGranted('ROLE_USER') ) {
+            //     $filters['caseUser'] = $user->getId();
+            // }
+
+            //return array('request' => $order_by);
 
             $em = $this->getDoctrine()->getManager();
             $datos = array();
@@ -93,7 +96,8 @@ class CasosRESTController extends VoryxController
                     new Route($request->get('_route'), array(
                         'limit' => $limit,
                         'page' => $page,
-                        'sorting' => $order_by
+                        'sorting' => $order_by,
+                        'user' => $user,
                     ))
                 );
             }
@@ -117,8 +121,9 @@ class CasosRESTController extends VoryxController
      */
     public function postAction(Request $request)
     {
+
         $entity = new Casos();
-        $entity->setCaseUser($this->getUser());
+        $entity->setCaseUser($this->getUserData());
 
         $form = $this->createForm(new CasosType(), $entity, array("method" => $request->getMethod()));
 
@@ -150,7 +155,7 @@ class CasosRESTController extends VoryxController
     public function putAction(Request $request, Casos $entity)
     {
         try {
-            $entity->setCaseUser($this->getUser());
+            $entity->setCaseUser($this->getUserData());
 
             $em = $this->getDoctrine()->getManager();
             $request->setMethod('PATCH'); //Treat all PUTs as PATCH
@@ -208,5 +213,17 @@ class CasosRESTController extends VoryxController
         } catch (\Exception $e) {
             return FOSView::create($e->getMessage(), Codes::HTTP_INTERNAL_SERVER_ERROR);
         }
+    }
+
+    /**
+     * User data
+     *
+     * @return Object User
+     */
+    public function getUserData()
+    {
+        $userManager = $this->container->get('fos_user.user_manager');
+
+        return $userManager->findUserByUsername($this->getUser()->getUserName());
     }
 }

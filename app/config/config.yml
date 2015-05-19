@@ -78,13 +78,8 @@ swiftmailer:
     password:  "%mailer_password%"
     spool:     { type: memory }
 
-sp_bower:
-    bundles:
-        AppBundle: ~
 
-    install_on_warmup: true
-    allow_root: true
-    keep_bowerrc: true
-    assetic:
-        enabled: false
-        nest_dependencies: false
+easy_admin:
+    entities:
+        - AppBundle\Entity\Casos
+        - AppBundle\Entity\Clinicas

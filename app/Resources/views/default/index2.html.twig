@@ -23,7 +23,7 @@
 	<script src="{{ asset('bundles/app/js/async-loader.js') }}"></script>
 
 	<script type="text/javascript">
-	window.onload = function() {
+	/*window.onload = function() {*/
 	// load all of the dependencies asynchronously.
 	    $script([{
 	        'f': 'bundles/app/components/angular/angular.js',
@@ -81,7 +81,7 @@
 	        'j': 1,
 	        'w': 0
 	    }, {
-	        'f': 'bundles/app/js/app.js',
+	        'f': 'bundles/app/js/app1.js',
 	        'n': "app_js",
 	        'j': 1,
 	        'w': 0
@@ -118,48 +118,77 @@
 	        angular.bootstrap(document, ['myApp']);
 
 	    });
-	};
+	/*};*/
 	</script>
 {% endblock %}
 
 {% block body %}
-    <div class="container" ng-controller="MainCtrl">
+    <div class="container">
 
-    	Homepage.
-
-    	<ul class="menu">
-	        <li><a ui-sref="admin">Admin </a></li>
-	    </ul>
-	    <div class="container">
-	        <div ui-view="main"></div>
+		<div class="masthead">
+	        <h3 class="text-muted">Angular Simple Front-End Apps using ui.router</h3>
+	        <div role="navigation">
+	          <ul class="nav nav-justified">
+	            <li><a ui-sref="home">Home</a></li>
+	            <li><a ui-sref="projects">Projects</a></li>
+	            <li><a ui-sref="services">Services</a></li>
+	            <li><a ui-sref="downloads">Downloads</a></li>
+	            <li><a ui-sref="about">About</a></li>
+	            <li><a ui-sref="contact">Contact</a></li>
+	          </ul>
+	        </div>
 	    </div>
 
-	    <script type="text/ng-template" id="login.html">
-		    <div class="modal-header">
-		        <h4 class="modal-title">Login required</h4>
-		    </div>
-		    <div class="modal-body">
-		        <form class="form-horizontal" role="form" ng-submit="submit(credentials)">
-		            <div class="alert alert-danger" ng-if="errorMessage">
+		<!-- Content Area -->
+	  	<div ui-view></div>
 
-		            </div>
-		            <div class="form-group">
-		                <label for="inputEmail3" class="col-sm-2 control-label">Username</label>
-		                <div class="col-sm-10">
-		                    <input type="text" class="form-control" ng-model="credentials.username" placeholder="Username" required>
-		                </div>
-		            </div>
-		            <div class="form-group">
-		                <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-		                <div class="col-sm-10">
-		                    <input type="password" class="form-control" ng-model="credentials.password" placeholder="Password" required>
-		                </div>
-		            </div>
-		        </form>
-		    </div>
-		    <div class="modal-footer">
-		        <button class="btn btn-primary" ng-click="submit(credentials)">Login</button>
-		    </div>
-		</script>
+		<!-- Site footer -->
+		<footer class="footer">
+			<p>© Amasik.com 2014</p>
+		</footer>
+
+	    <script type="text/ng-template" id="home.html">
+			 <div class="jumbotron">
+				<h1>Home Page</h1>
+				<p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
+				<p><a class="btn btn-lg btn-success" href="javascript:;" role="button">Get started today</a></p>
+			  </div>
+	    </script>
+
+		<script type="text/ng-template" id="projects.html">
+			 <div class="jumbotron">
+				<h1>Projects Page</h1>
+				<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+			  </div>
+	    </script>
+
+		<script type="text/ng-template" id="services.html">
+			 <div class="jumbotron">
+				<h1>Services Page</h1>
+				<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+			  </div>
+	    </script>
+
+		<script type="text/ng-template" id="downloads.html">
+			 <div class="jumbotron">
+				<h1>Downloads Page</h1>
+				<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+			  </div>
+	    </script>
+
+		<script type="text/ng-template" id="about.html">
+			 <div class="jumbotron">
+				<h1>About Page</h1>
+				<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+			  </div>
+	    </script>
+
+		<script type="text/ng-template" id="contact.html">
+			 <div class="jumbotron">
+				<h1>Contact Page</h1>
+				<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+			  </div>
+	    </script>
+
     </div>
 {% endblock %}

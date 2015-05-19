@@ -2,19 +2,25 @@
 
 namespace AppBundle\Controller;
 
+use AppBundle\Entity\User;
+use AppBundle\Form\UserType;
 use FOS\RestBundle\Controller\Annotations\Post;
+use FOS\RestBundle\Controller\Annotations\Get;
 use FOS\RestBundle\Controller\Annotations\QueryParam;
 use FOS\RestBundle\Controller\Annotations\RouteResource;
 use FOS\RestBundle\Controller\Annotations\View;
 use FOS\RestBundle\Request\ParamFetcherInterface;
 use FOS\RestBundle\Util\Codes;
 use FOS\RestBundle\View\View as FOSView;
-use AppBundle\Entity\User;
-use AppBundle\Form\UserType;
+use FOS\UserBundle\Event\FilterUserResponseEvent;
+use FOS\UserBundle\Event\FormEvent;
+use FOS\UserBundle\Event\GetResponseUserEvent;
+use FOS\UserBundle\FOSUserEvents;
 use Nelmio\ApiDocBundle\Annotation\ApiDoc;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\Form\Form;
+use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Voryx\RESTGeneratorBundle\Controller\VoryxController;
@@ -89,6 +95,9 @@ class UserRESTController extends VoryxController
     public function postAction(Request $request)
     {
         $entity = new User();
+        $entity->setEnabled(true);
+        $entity->setPlainPassword($request->request->get('password'));
+
         $form = $this->createForm(new UserType(), $entity, array("method" => $request->getMethod()));
         $this->removeExtraFields($request, $form);
         $form->handleRequest($request);
@@ -200,5 +209,20 @@ class UserRESTController extends VoryxController
     public function registerAction(Request $request)
     {
         return $this->postAction($request);
+    }
+
+    /**
+     * Roles
+     *
+     * @View(statusCode=201, serializerEnableMaxDepthChecks=true)
+     *
+     * @Get("roles")
+     * 
+     * @return array
+     */
+    public function rolesAction()
+    {
+        return array('ROLE_ADMIN' => 'ADMIN');
+        return User::getRoleNames();
     }
 }

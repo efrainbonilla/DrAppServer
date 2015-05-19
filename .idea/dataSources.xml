@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="264573175">
-    <data-source source="LOCAL" name="MySQL - drapp_db@localhost" uuid="3ff509be-ecb8-41d4-97bd-8ee82f9a522f">
+  <component name="DataSourceManagerImpl" format="xml" hash="4072322382">
+    <data-source source="LOCAL" name="PostgreSQL - db_drapp@localhost" uuid="ede856f8-287a-4686-995b-d518e81fbe01">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/db_drapp</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="MySQL - db_drapp@localhost" uuid="ffe5c467-f012-4514-8284-8852e5fb6dde">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/drapp_db</jdbc-url>
+      <jdbc-url>jdbc:mysql://localhost:3306/db_drapp</jdbc-url>
       <driver-properties>
         <property name="zeroDateTimeBehavior" value="convertToNull" />
         <property name="tinyInt1isBit" value="false" />
@@ -13,13 +20,6 @@
         <property name="characterSetResults" value="utf8" />
         <property name="yearIsDateType" value="false" />
       </driver-properties>
-      <libraries />
-    </data-source>
-    <data-source source="LOCAL" name="PostgreSQL - drapp_db@localhost" uuid="801415eb-2e69-49cd-b368-4555eac6e22a">
-      <driver-ref>postgresql</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:5432/drapp_db</jdbc-url>
       <libraries />
     </data-source>
   </component>

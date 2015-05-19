@@ -10,3 +10,6 @@
 /vendor/
 /bin/
 /composer.phar
+/src/AppBundle/Resources/public/components/
+/web/css/
+/web/bower_components/

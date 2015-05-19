@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Bienvenido!{% endblock %}</title>
+        {% block stylesheets %} {% endblock %}
+
+        {% block javascripts_async_head %}{% endblock %}
+
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        {% block javascripts_async_body %}
+        <script type="text/javascript">
+            $script.loaderBody(browserSupport, browserFirefox, { urlImgRelative: 'bundles/app/css/img/'});
+        </script>
+        {% endblock %}
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

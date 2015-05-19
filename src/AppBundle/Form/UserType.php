@@ -15,11 +15,22 @@ class UserType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('createdAt')
-            ->add('updateAt')
+            ->add('username')
+            ->add('email', 'email')
+            ->add('enabled', 'checkbox', array(
+                    'required' => false,
+                    'compound' => false
+                ))
+            ->add('password'/*, 'repeated', array(
+                    'type' => 'password',
+                    'invalid_message' => 'Las dos contraseñas deben coincidir'
+                )*/
+            )
+            /*->add('createdAt')
+            ->add('updateAt')*/
         ;
     }
-    
+
     /**
      * @param OptionsResolverInterface $resolver
      */

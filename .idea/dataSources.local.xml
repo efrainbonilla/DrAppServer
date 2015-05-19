@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="MySQL - drapp_db@localhost" uuid="3ff509be-ecb8-41d4-97bd-8ee82f9a522f">
-      <secret-storage>master_key</secret-storage>
-      <user-name>root</user-name>
-      <schema-pattern>drapp_db.*</schema-pattern>
-      <default-schemas>drapp_db.*</default-schemas>
-    </data-source>
-    <data-source name="PostgreSQL - drapp_db@localhost" uuid="801415eb-2e69-49cd-b368-4555eac6e22a">
+    <data-source name="PostgreSQL - db_drapp@localhost" uuid="ede856f8-287a-4686-995b-d518e81fbe01">
       <secret-storage>master_key</secret-storage>
       <user-name>postgres</user-name>
-      <schema-pattern>drapp_db.pg_catalog drapp_db.public</schema-pattern>
-      <default-schemas>drapp_db.pg_catalog drapp_db.public</default-schemas>
+      <schema-pattern>db_drapp.pg_catalog db_drapp.public</schema-pattern>
+      <default-schemas>db_drapp.pg_catalog db_drapp.public</default-schemas>
+    </data-source>
+    <data-source name="MySQL - db_drapp@localhost" uuid="ffe5c467-f012-4514-8284-8852e5fb6dde">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>db_drapp.*</schema-pattern>
+      <default-schemas>db_drapp.*</default-schemas>
     </data-source>
   </component>
 </project>

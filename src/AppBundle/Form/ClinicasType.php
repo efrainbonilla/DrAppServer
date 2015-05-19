@@ -16,8 +16,8 @@ class ClinicasType extends AbstractType
     {
         $builder
             ->add('clinName')
-            ->add('clinLat')
-            ->add('clinLng')
+            ->add('clinLat', 'text', array('data' => '', 'empty_data' => '0'))
+            ->add('clinLng', 'text', array('data' => '', 'empty_data' => '0'))
             ->add('clinAddr')
         ;
     }

@@ -2,7 +2,7 @@
 
 POST /api/login_check
 
-{"username": "useradmin", "password": "123456"}
+{"username": "admin", "password": "123456"}
 {"username": "usuarioprueba", "password": "123456"}
 
 #REGISTRO
@@ -35,7 +35,7 @@ POST /api/casos
 	"case_status": "publish",
 	"comment_status": "open",
 	"access_control": "all",
-	"case_clin": "4"
+	"case_clin": "1"
 }
 
 PUT /api/casos/2

@@ -1,0 +1,99 @@
+{% extends 'base_async.html.twig' %}
+
+{% block stylesheets %}
+	{% stylesheets '@AppBundle/Resources/public/components/bootstrap/dist/css/bootstrap.css' %}
+		<link href="{{ asset_url }}" rel="stylesheet" type="text/css" />
+	{% endstylesheets %}
+{% endblock %}
+
+{% block javascripts_async_head %}
+	<script src="{{ asset('bundles/app/components/angular/angular.js') }}"></script>
+	<script src="{{ asset('bundles/app/components/angular-animate/angular-animate.js') }}"></script>
+	<script src="{{ asset('bundles/app/components/angular-sanitize/angular-sanitize.js') }}"></script>
+	<script src="{{ asset('bundles/app/components/angular-cookies/angular-cookies.js') }}"></script>
+	<script src="{{ asset('bundles/app/components/angular-touch/angular-touch.js') }}"></script>
+	<script src="{{ asset('bundles/app/components/angular-resource/angular-resource.js') }}"></script>
+	<script src="{{ asset('bundles/app/components/angular-ui-utils/ui-utils.js') }}"></script>
+	<script src="{{ asset('bundles/app/components/angular-ui-router/release/angular-ui-router.js') }}"></script>
+	<script src="{{ asset('bundles/app/components/angular-bootstrap/ui-bootstrap-tpls.js') }}"></script>
+	<script src="{{ asset('bundles/app/components/angular-http-auth/src/http-auth-interceptor.js') }}"></script>
+	<script src="{{ asset('bundles/app/components/ng-table/dist/ng-table.js') }}"></script>
+	<script src="{{ asset('bundles/app/js/app1.js') }}"></script>
+	<script src="{{ asset('bundles/app/js/services.js') }}"></script>
+	<script src="{{ asset('bundles/app/js/resources.js') }}"></script>
+	<script src="{{ asset('bundles/app/js/controllers.js') }}"></script>
+	<script src="{{ asset('bundles/app/js/filters.js') }}"></script>
+	<script src="{{ asset('bundles/app/js/directives.js') }}"></script>
+{% endblock %}
+{% block javascripts_async_body %} {% endblock %}
+
+{% block body %}
+    <div class="container" ng-app="myApp">
+    	<div class="masthead">
+	        <h3 class="text-muted">Angular Simple Front-End Apps using ui.router</h3>
+	        <div role="navigation">
+	          <ul class="nav nav-justified">
+	            <li><a ui-sref="home">Home</a></li>
+	            <li><a ui-sref="projects">Projects</a></li>
+	            <li><a ui-sref="services">Services</a></li>
+	            <li><a ui-sref="downloads">Downloads</a></li>
+	            <li><a ui-sref="about">About</a></li>
+	            <li><a ui-sref="contact">Contact</a></li>
+	          </ul>
+	        </div>
+	    </div>
+
+		<!-- Content Area -->
+	  	<div ui-view></div>
+
+		<!-- Site footer -->
+		<footer class="footer">
+			<p>© Amasik.com 2014</p>
+		</footer>
+	    <script type="text/ng-template" id="home.html">
+			 <div class="jumbotron">
+				<h1>Home Page</h1>
+				<p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
+				<p><a class="btn btn-lg btn-success" href="javascript:;" role="button">Get started today</a></p>
+			  </div>
+	    </script>
+
+		<script type="text/ng-template" id="projects.html">
+			 <div class="jumbotron">
+				<h1>Projects Page</h1>
+				<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+			  </div>
+	    </script>
+
+		<script type="text/ng-template" id="services.html">
+			 <div class="jumbotron">
+				<h1>Services Page</h1>
+				<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+			  </div>
+	    </script>
+
+		<script type="text/ng-template" id="downloads.html">
+			 <div class="jumbotron">
+				<h1>Downloads Page</h1>
+				<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+			  </div>
+	    </script>
+
+		<script type="text/ng-template" id="about.html">
+			 <div class="jumbotron">
+				<h1>About Page</h1>
+				<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+			  </div>
+	    </script>
+
+		<script type="text/ng-template" id="contact.html">
+			 <div class="jumbotron">
+				<h1>Contact Page</h1>
+				<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+			  </div>
+	    </script>
+    </div>
+
+{% endblock %}
+
+{% block javascripts %} {% endblock %}

@@ -9,6 +9,7 @@ use JMS\Serializer\Annotation\ExclusionPolicy;
 use JMS\Serializer\Annotation\Expose;
 use JMS\Serializer\Annotation\SerializedName;
 use JMS\Serializer\Annotation\Type;
+use Symfony\Component\Yaml\Parser;
 
 /**
  * User
@@ -26,6 +27,7 @@ class User extends BaseUser
      * @ORM\Column(name="user_id", type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
+     * @Expose
      */
     protected $id;
 
@@ -92,7 +94,7 @@ class User extends BaseUser
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -102,7 +104,7 @@ class User extends BaseUser
     /**
      * Get createdAt
      *
-     * @return \DateTime 
+     * @return \DateTime
      */
     public function getCreatedAt()
     {
@@ -112,7 +114,7 @@ class User extends BaseUser
     /**
      * Get updateAt
      *
-     * @return \DateTime 
+     * @return \DateTime
      */
     public function getUpdateAt()
     {
@@ -122,7 +124,7 @@ class User extends BaseUser
     /**
      * Add casos
      *
-     * @param \AppBundle\Entity\Casos $casos
+     * @param  \AppBundle\Entity\Casos $casos
      * @return User
      */
     public function addCaso(\AppBundle\Entity\Casos $casos)
@@ -145,10 +147,43 @@ class User extends BaseUser
     /**
      * Get casos
      *
-     * @return \Doctrine\Common\Collections\Collection 
+     * @return \Doctrine\Common\Collections\Collection
      */
     public function getCasos()
     {
         return $this->casos;
+    }
+
+    /**
+     * Get RoleNames
+     * @return array
+     */
+    public static function getRoleNames()
+    {
+        $pathToSecurity = __DIR__ . '/../../../..' . '/app/config/security.yml';
+        $yaml = new Parser();
+        $rolesArray = $yaml->parse(file_get_contents($pathToSecurity));
+        $arrayKeys = array();
+        foreach ($rolesArray['security']['role_hierarchy'] as $key => $value) {
+            //never allow assigning super admin
+            if ($key != 'ROLE_SUPER_ADMIN')
+                $arrayKeys[$key] = User::convertRoleToLabel($key);
+            //skip values that are arrays --- roles with multiple sub-roles
+            if (!is_array($value))
+                if ($value != 'ROLE_SUPER_ADMIN')
+                    $arrayKeys[$value] = User::convertRoleToLabel($value);
+        }
+        //sort for display purposes
+        asort($arrayKeys);
+
+        return $arrayKeys;
+    }
+
+    static private function convertRoleToLabel($role)
+    {
+        $roleDisplay = str_replace('ROLE_', '', $role);
+        $roleDisplay = str_replace('_', ' ', $roleDisplay);
+
+        return ucwords(strtolower($roleDisplay));
     }
 }

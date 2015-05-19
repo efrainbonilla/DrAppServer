@@ -22,6 +22,7 @@ class Casos
      * @ORM\Column(name="case_id", type="integer", nullable=false)
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
+     * @Expose
      */
     private $caseId;
 

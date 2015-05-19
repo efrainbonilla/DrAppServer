@@ -30,12 +30,12 @@ class AppKernel extends Kernel
 
             new JMS\SerializerBundle\JMSSerializerBundle(),
             new Bazinga\Bundle\HateoasBundle\BazingaHateoasBundle(),
-
-            //BOWER
-            new Sp\BowerBundle\SpBowerBundle(),
             
             //PROJECT CODE
             new AppBundle\AppBundle(),
+
+            //ADMIN GENERATOR
+            new JavierEguiluz\Bundle\EasyAdminBundle\EasyAdminBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
@@ -43,6 +43,8 @@ class AppKernel extends Kernel
             $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
             $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
+
+            $bundles[] = new \marmelab\NgAdminGeneratorBundle\marmelabNgAdminGeneratorBundle();
         }
 
         if (in_array($this->getEnvironment(), array('test'))) {
