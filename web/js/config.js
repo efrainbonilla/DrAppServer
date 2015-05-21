@@ -1,3 +1,5 @@
+
+
 /*global angular*/
 (function () {
 	"use strict";
@@ -6,7 +8,8 @@
 
     var app = angular.module('myApp', [
     	'ng-admin',
-    	'http-auth-interceptor'
+    	'http-auth-interceptor',
+    	'boxuk.translation'//symfony-translation
     ]);
 
 	function truncate (value) {
@@ -500,7 +503,7 @@
 				]);
 
 			user.editionView()
-				.title('Editar usuario # {{ entry.values.id }}')
+				.title("{{ 'profile.edit.submit' | trans }} # {{ entry.values.id }}")
 				.fields([
 					nga.field('username'),
 					nga.field('email', 'email'),
@@ -678,8 +681,6 @@
     });
 
 
-
-
 	app.config(function(
 		NgAdminConfigurationProvider,
 		/*PostAdminProvider,
@@ -726,6 +727,27 @@
                 )
         );*/
 
+		var customHeaderTemplate =
+		'<div class="navbar-header">' +
+            '<a class="navbar-brand" href="#" ng-click="appController.displayHome()">{{ ::appController.applicationName }}</a>' +
+        '</div>' +
+
+        '<ul class="nav navbar-top-links navbar-right">'+
+			'<li class="dropdown">'+
+				'<a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i> </a>'+
+				'<ul class="dropdown-menu dropdown-user">'+
+					'<li><a href="#"> <i class="fa fa-user fa-fw"></i>Perfil efrain</a></li>'+
+					'<li><a href="#"> <i class="fa fa-gear fa-fw"></i>Configuración</a></li>'+
+					'<li class="divider"></li>'+
+					'<li><a href="#"> <i class="fa fa-sign-out fa-fw"></i>Salir</a></li>'+
+				'</ul>'+
+			'</li>'+
+		'</ul>';
+
+
+        admin.header(customHeaderTemplate);
+
 		NgAdminConfigurationProvider.configure(admin);
 	});
+
 }());

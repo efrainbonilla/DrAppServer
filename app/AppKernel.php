@@ -36,6 +36,8 @@ class AppKernel extends Kernel
 
             //ADMIN GENERATOR
             new JavierEguiluz\Bundle\EasyAdminBundle\EasyAdminBundle(),
+
+            new Bazinga\Bundle\JsTranslationBundle\BazingaJsTranslationBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

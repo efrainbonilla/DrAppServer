@@ -12,4 +12,9 @@
 /composer.phar
 /src/AppBundle/Resources/public/components/
 /web/css/
+!web/js/Crud/*
+!web/js/Main/*
+/web/js/translations/
 /web/bower_components/
+/web/ng-admin/*
+.fuse_*

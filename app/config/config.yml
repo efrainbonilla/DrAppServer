@@ -39,6 +39,8 @@ twig:
 # Assetic Configuration
 assetic:
     debug:          "%kernel.debug%"
+    variables:
+        locale: [es]
     use_controller: false
     bundles:        [ ]
     #java: /usr/bin/java
@@ -83,3 +85,7 @@ easy_admin:
     entities:
         - AppBundle\Entity\Casos
         - AppBundle\Entity\Clinicas
+
+bazinga_js_translation:
+    locale_fallback:      es
+    default_domain:       messages
