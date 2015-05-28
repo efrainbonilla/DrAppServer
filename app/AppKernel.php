@@ -17,7 +17,7 @@ class AppKernel extends Kernel
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
-          
+
             //API
             new Voryx\RESTGeneratorBundle\VoryxRESTGeneratorBundle(),
             new FOS\RestBundle\FOSRestBundle(),
@@ -30,7 +30,7 @@ class AppKernel extends Kernel
 
             new JMS\SerializerBundle\JMSSerializerBundle(),
             new Bazinga\Bundle\HateoasBundle\BazingaHateoasBundle(),
-            
+
             //PROJECT CODE
             new AppBundle\AppBundle(),
 
