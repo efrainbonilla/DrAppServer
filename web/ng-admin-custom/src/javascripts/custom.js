@@ -1,5 +1,4 @@
 
-
 /*global angular*/
 (function () {
 	"use strict";
@@ -757,5 +756,4 @@
 
 		console.log($scope.$id);
 	});
-
 }());
