@@ -14,7 +14,7 @@ module.exports = {
         'custom': getEntrySources(customSources)
     },
     output: {
-        publicPath: "http://localhost:8080/",
+        publicPath: "http://drapp.local:9012/",
         filename: "build/[name].min.js"
     },
     resolveLoader: {
@@ -24,7 +24,7 @@ module.exports = {
 	},
     module: {
         loaders: [
-            { test: /\.js/, loaders: ['babel'], exclude: /ng-admin\/node_modules\/(?!admin-config)/ },
+            { test: /\.js/, loaders: ['babel'], exclude: /..\/ng-admin\/node_modules\/(?!admin-config)/ },
             { test: /\.js/, loaders: ['ng-annotate'] },
             { test: /\.html$/, loader: 'html' },
             { test: /\.(woff2?|svg|ttf|eot)(\?.*)?$/, loader: 'url' },
