@@ -20,8 +20,7 @@ define(function () {
 
 		var admin = NgAdminConfigurationProvider
 		.application('Dr App')
-        .baseApiUrl(baseApiUrl),
-        nga = NgAdminConfigurationProvider;
+        .baseApiUrl(baseApiUrl);
 
 
 		admin
@@ -47,7 +46,7 @@ define(function () {
 		NgAdminConfigurationProvider.configure(admin);
 	}
 
-	/*ConfigAdmin.$inject = [];*/
+	ConfigAdmin.$inject = ['NgAdminConfigurationProvider', 'CasoAdminProvider', 'ClinicaAdminProvider', 'UserAdminProvider'];
 
 	return ConfigAdmin;
 });

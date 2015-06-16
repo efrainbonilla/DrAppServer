@@ -1,0 +1,21 @@
+{
+  "name": "ng-admin-custom",
+  "version": "0.0.1",
+  "private": false,
+  "main": "build/custom.min.js",
+  "dependencies": {
+    "angular-http-auth": "^1.2.1",
+    "angular-jwt": "0.0.9",
+    "angular-storage": "0.0.11",
+    "angular-symfony-translation": "1.0.0",
+    "bower": "^1.4.1",
+    "npm": "^2.10.0"
+  },
+  "devDependencies": {
+    "imports-loader": "^0.6.4",
+    "script-loader": "^0.6.1"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}

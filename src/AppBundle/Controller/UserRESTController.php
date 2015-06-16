@@ -217,7 +217,7 @@ class UserRESTController extends VoryxController
      * @View(statusCode=201, serializerEnableMaxDepthChecks=true)
      *
      * @Get("roles")
-     * 
+     *
      * @return array
      */
     public function rolesAction()

@@ -5,11 +5,174 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b980135a-9e06-464b-83a9-564489eeca26" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/logs/.gitkeep" afterPath="$PROJECT_DIR$/app/logs/.gitkeep" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/css/img/350.gif" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/public/css/img/350.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/web/assets/fonts/FontAwesome.otf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/apple-touch-icon.png" afterPath="$PROJECT_DIR$/web/apple-touch-icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/async.zip" afterPath="$PROJECT_DIR$/web/async.zip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/css/img/bg.png" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/public/css/img/bg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/favicon.ico" afterPath="$PROJECT_DIR$/web/favicon.ico" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/web/assets/fonts/fontawesome-webfont.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/web/assets/fonts/fontawesome-webfont.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/web/assets/fonts/fontawesome-webfont.woff" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/ng-admin" afterPath="$PROJECT_DIR$/web/ng-admin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.bowerrc" afterPath="$PROJECT_DIR$/.bowerrc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/config/bower/.bowerrc" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/config/bower/.bowerrc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/.htaccess" afterPath="$PROJECT_DIR$/app/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/.htaccess" afterPath="$PROJECT_DIR$/src/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/.htaccess" afterPath="$PROJECT_DIR$/web/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/AppBundle.php" afterPath="$PROJECT_DIR$/src/AppBundle/AppBundle.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppCache.php" afterPath="$PROJECT_DIR$/app/AppCache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Main/component/controller/AppController.js" afterPath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Main/component/controller/AppController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/AuthenticationController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/AuthenticationController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Tests/Controller/AuthenticationControllerTest.php" afterPath="$PROJECT_DIR$/src/AppBundle/Tests/Controller/AuthenticationControllerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Main/component/factory/AuthenticationService.js" afterPath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Main/component/factory/AuthenticationService.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Main/component/factory/CasoAdmin.js" afterPath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Main/component/factory/CasoAdmin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Casos.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Casos.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/CasosRESTController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/CasosRESTController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Tests/Controller/CasosRESTControllerTest.php" afterPath="$PROJECT_DIR$/src/AppBundle/Tests/Controller/CasosRESTControllerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/CasosRepository.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/CasosRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Form/CasosType.php" afterPath="$PROJECT_DIR$/src/AppBundle/Form/CasosType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Main/component/factory/ClinicaAdmin.js" afterPath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Main/component/factory/ClinicaAdmin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Clinicas.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Clinicas.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/ClinicasRESTController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/ClinicasRESTController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Form/ClinicasType.php" afterPath="$PROJECT_DIR$/src/AppBundle/Form/ClinicasType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Comentarios.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Comentarios.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Main/config/ConfigAdmin.js" afterPath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Main/config/ConfigAdmin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Crud/CrudModule.js" afterPath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Crud/CrudModule.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/DrApp.iml" afterPath="$PROJECT_DIR$/.idea/DrApp.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Especialidad.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Especialidad.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/HerokuDatabase.php" afterPath="$PROJECT_DIR$/src/AppBundle/HerokuDatabase.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/translations/HttpStatusCodes.en.xlf" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/translations/HttpStatusCodes.en.xlf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/translations/HttpStatusCodes.es.xlf" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/translations/HttpStatusCodes.es.xlf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Main/config/InterceptorAdmin.js" afterPath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Main/config/InterceptorAdmin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/EventListener/JWTCreatedListener.php" afterPath="$PROJECT_DIR$/src/AppBundle/EventListener/JWTCreatedListener.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/EventListener/JWTDecodedListener.php" afterPath="$PROJECT_DIR$/src/AppBundle/EventListener/JWTDecodedListener.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/EventListener/JWTResponseListener.php" afterPath="$PROJECT_DIR$/src/AppBundle/EventListener/JWTResponseListener.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LICENSE" afterPath="$PROJECT_DIR$/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Crud/list/ListActions.html" afterPath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Crud/list/ListActions.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Crud/list/ListActions.js" afterPath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Crud/list/ListActions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Main/run/LoaderToken.js" afterPath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Main/run/LoaderToken.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Main/MainModule.js" afterPath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Main/MainModule.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Makefile" afterPath="$PROJECT_DIR$/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/ng-admin-custom/Makefile" afterPath="$PROJECT_DIR$/web/ng-admin-custom/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Medicos.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Medicos.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Medios.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Medios.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Metacasosspc.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Metacasosspc.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Metacasosuser.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Metacasosuser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Metaclinicas.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Metaclinicas.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Metaespecialidad.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Metaespecialidad.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Metapacientes.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Metapacientes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Main/component/controller/ModalAccessDeniedController.js" afterPath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Main/component/controller/ModalAccessDeniedController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Main/component/controller/ModalLoginController.js" afterPath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Main/component/controller/ModalLoginController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Main/component/controller/ModalLogoutController.js" afterPath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Main/component/controller/ModalLogoutController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Pacientes.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Pacientes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Procfile" afterPath="$PROJECT_DIR$/Procfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/config.js" afterPath="$PROJECT_DIR$/web/js/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Resultados.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Resultados.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/SecurityController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/SecurityController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Tests/Controller/SecurityControllerTest.php" afterPath="$PROJECT_DIR$/src/AppBundle/Tests/Controller/SecurityControllerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/SymfonyRequirements.php" afterPath="$PROJECT_DIR$/app/SymfonyRequirements.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UPGRADE.md" afterPath="$PROJECT_DIR$/UPGRADE.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/User.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Main/component/factory/UserAdmin.js" afterPath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Main/component/factory/UserAdmin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/UserRESTController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/UserRESTController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/UserRepository.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/UserRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Main/component/service/UserService.js" afterPath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Main/component/service/UserService.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Form/UserType.php" afterPath="$PROJECT_DIR$/src/AppBundle/Form/UserType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Tests/WebTestCase.php" afterPath="$PROJECT_DIR$/src/AppBundle/Tests/WebTestCase.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/partials/admin.html" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/public/partials/admin.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api.txt" afterPath="$PROJECT_DIR$/api.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/js/app.js" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/public/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.json" afterPath="$PROJECT_DIR$/app.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app.php" afterPath="$PROJECT_DIR$/web/app.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/js/app1.js" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/public/js/app1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app_dev.php" afterPath="$PROJECT_DIR$/web/app_dev.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/js/async-loader.js" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/public/js/async-loader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/autoload.php" afterPath="$PROJECT_DIR$/app/autoload.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base_async.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base_async.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/config/bower/bower.json" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/config/bower/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/js/browser.js" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/public/js/browser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/check.php" afterPath="$PROJECT_DIR$/app/check.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/config.php" afterPath="$PROJECT_DIR$/web/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config_dev.yml" afterPath="$PROJECT_DIR$/app/config/config_dev.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config_prod.yml" afterPath="$PROJECT_DIR$/app/config/config_prod.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config_test.yml" afterPath="$PROJECT_DIR$/app/config/config_test.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/console" afterPath="$PROJECT_DIR$/app/console" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/js/controllers.js" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/public/js/controllers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Crud/form/create.html" afterPath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Crud/form/create.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/custom.js" afterPath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/custom.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/ng-admin-custom/build/custom.min.js" afterPath="$PROJECT_DIR$/web/ng-admin-custom/build/custom.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.txt" afterPath="$PROJECT_DIR$/db.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Crud/delete/delete.html" afterPath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Crud/delete/delete.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/js/directives.js" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/public/js/directives.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Crud/form/edit.html" afterPath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Crud/form/edit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" afterPath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/js/filters.js" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/public/js/filters.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/web/assets/fonts/fontawesome-webfont.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/fos/fos_rest.yml" afterPath="$PROJECT_DIR$/app/config/fos/fos_rest.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/fos/fos_user.yml" afterPath="$PROJECT_DIR$/app/config/fos/fos_user.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/frameworkRootSettings.xml" afterPath="$PROJECT_DIR$/.idea/frameworkRootSettings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLinters/gjslint.xml" afterPath="$PROJECT_DIR$/.idea/jsLinters/gjslint.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/partials/dashboard/index.html" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/public/partials/dashboard/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/doc/index.rst" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/doc/index.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/default/index2.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/default/index2.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/default/index_dev.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/default/index_dev.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/default/index_prod.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/default/index_prod.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Main/view/layoutLogin.html" afterPath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Main/view/layoutLogin.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Main/view/layoutModalDenied.html" afterPath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Main/view/layoutModalDenied.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Main/view/layoutModalLogin.html" afterPath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Main/view/layoutModalLogin.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Main/view/layoutModalLogout.html" afterPath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Main/view/layoutModalLogout.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Main/view/layoutNavbar.html" afterPath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Main/view/layoutNavbar.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/layout_login.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/layout_login.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Crud/list/list.html" afterPath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Crud/list/list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/partials/login.html" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/public/partials/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/partials/main.html" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/public/partials/main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/translations/messages.es.xlf" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/translations/messages.es.xlf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/translations/messages.fr.xlf" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/translations/messages.fr.xlf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/parameters.yml.dist" afterPath="$PROJECT_DIR$/app/config/parameters.yml.dist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/phpunit.xml.dist" afterPath="$PROJECT_DIR$/app/phpunit.xml.dist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/Authentication/ping.html.twig" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/Authentication/ping.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/var/jwt/private.pem" afterPath="$PROJECT_DIR$/app/var/jwt/private.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Tests/Fixtures/JWT/private.pem" afterPath="$PROJECT_DIR$/src/AppBundle/Tests/Fixtures/JWT/private.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/var/jwt/public.pem" afterPath="$PROJECT_DIR$/app/var/jwt/public.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Tests/Fixtures/JWT/public.pem" afterPath="$PROJECT_DIR$/src/AppBundle/Tests/Fixtures/JWT/public.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/js/resources.js" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/public/js/resources.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/robots.txt" afterPath="$PROJECT_DIR$/web/robots.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing_api.yml" afterPath="$PROJECT_DIR$/app/config/routing_api.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/config/routing_api.yml" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/config/routing_api.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing_api_admin.yml" afterPath="$PROJECT_DIR$/app/config/routing_api_admin.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/config/routing_api_admin.yml" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/config/routing_api_admin.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing_dev.yml" afterPath="$PROJECT_DIR$/app/config/routing_dev.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/js/services.js" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/public/js/services.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/services.yml" afterPath="$PROJECT_DIR$/app/config/services.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Crud/show/show.html" afterPath="$PROJECT_DIR$/web/ng-admin-custom/src/javascripts/Crud/show/show.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/symfony2.xml" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/user.php.txt" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/user.php.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/ng-admin-custom/webpack.config.js" afterPath="$PROJECT_DIR$/web/ng-admin-custom/webpack.config.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DrApp.iws" />
@@ -55,7 +218,7 @@
       <file leaf-file-name="angular.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/bower_components/angular/angular.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.0603589" vertical-offset="145660" max-vertical-offset="394710">
+            <state vertical-scroll-proportion="-2.4945652" vertical-offset="166736" max-vertical-offset="447338">
               <caret line="9754" column="1" selection-start-line="9754" selection-start-column="1" selection-end-line="9754" selection-end-column="1" />
               <folding />
             </state>
@@ -157,8 +320,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="24" />
-    <option name="width" value="1366" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -370,7 +534,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="965" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
-    <property name="last_opened_file_path" value="/usr/bin/dh_lintian" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="js.eslint.nodeInterpreter" value="/usr/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
   </component>
@@ -556,17 +720,20 @@
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
     <configuration default="true" type="com.intellij.database.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
       <option name="VM_PARAMETERS" value="" />
       <option name="USER_CFG_CLASS" />
       <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
     <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
       <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
@@ -575,9 +742,6 @@
       <tasks />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -616,7 +780,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1366" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32771823" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -624,21 +788,21 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32771823" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21223564" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24924472" sideWeight="0.49881235" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Symfony2" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930514" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24093656" sideWeight="0.49881235" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23640484" sideWeight="0.49770993" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23352855" sideWeight="0.49770993" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20694864" sideWeight="0.50229007" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3568147" sideWeight="0.41760904" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3559055" sideWeight="0.41760904" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Heroku" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329927" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329927" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Symfony2" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930514" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3678832" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -678,6 +842,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/web/bower_components/angular/angular.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="447338">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/bower_components/angular/angular.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="394710">
@@ -752,13 +924,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db.txt">
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
@@ -852,13 +1024,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db.txt">
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4383117" vertical-offset="60" max-vertical-offset="1845">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
         </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Procfile">
@@ -953,32 +1125,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://db-console:/8ae459bc/ede856f8-287a-4686-995b-d518e81fbe01/">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="394">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/8ae459bc/ede856f8-287a-4686-995b-d518e81fbe01/db_drapp.public.clinicas">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://db-console:/8ae459bc/ffe5c467-f012-4514-8284-8852e5fb6dde/">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="394">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2284264" vertical-offset="0" max-vertical-offset="394">
@@ -1064,13 +1210,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/ng-admin/Makefile">
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.040983606" vertical-offset="0" max-vertical-offset="345">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
         </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
@@ -1092,7 +1238,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/bower_components/angular/angular.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0603589" vertical-offset="145660" max-vertical-offset="394710">
+        <state vertical-scroll-proportion="-2.4945652" vertical-offset="166736" max-vertical-offset="447338">
           <caret line="9754" column="1" selection-start-line="9754" selection-start-column="1" selection-end-line="9754" selection-end-column="1" />
           <folding />
         </state>

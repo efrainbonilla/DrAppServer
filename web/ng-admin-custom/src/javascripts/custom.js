@@ -1,27 +1,16 @@
+/*require('imports?this=>window!./../../../bundles/bazingajstranslation/js/translator.min.js');*/
+require('./../../../js/translator.js');
+require('./../../../js/translations/config.js');
+var req = require.context("./../../../js/translations", true, /.*\/(es|en)\.js$/);
+
+var transKeys = req.keys();
+for (var i = 0; i < transKeys.length; i++) {
+	__webpack_require__(req.resolve(transKeys[i]));
+}
 
 require('./Main/MainModule');
 require('./Crud/CrudModule');
 
-var app = angular.module('myApp', ['mainApp', 'crudApp', 'ng-admin', 'http-auth-interceptor', 'boxuk.translation', 'angular-jwt', 'angular-storage']);
-
-app.controller('DropdownCtrl', function($scope, $log){
-	$scope.username = 'Efrain';
-	$scope.items = [
-		{ text: 'Perfil ' + $scope.username, icon_fa: 'fa fa-user fa-fw' }
-	];
-
-
-	$scope.status = {
-		isopen: false
-	};
-
-	$scope.toggled = function(open) {
-		$log.log('Dropdown is now: ', open);
-	};
-
-	$scope.toggleDropdown = function($event) {
-		$event.preventDefault();
-		$event.stopPropagation();
-		$scope.status.isopen = !$scope.status.isopen;
-	};
-});
+angular.module('myApp', [
+	'mainMod', 'crudMod', 'ng-admin', 'http-auth-interceptor', 'boxuk.translation', 'angular-jwt', 'angular-storage'
+]);

@@ -1,5 +1,5 @@
 {
-  "name": "drapp-angular",
+  "name": "ng-admin-custom",
   "dependencies": {
     "ng-admin": "master",
     "angular-http-auth": "latest",

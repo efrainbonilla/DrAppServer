@@ -1,10 +1,11 @@
 
-var MainModule = angular.module('mainApp', ['ng-admin']);
+var MainModule = angular.module('mainMod', ['ng-admin']);
 
 MainModule.controller('AppCtrl', require('./component/controller/AppController'));
 MainModule.controller('ModalLoginCtrl', require('./component/controller/ModalLoginController'));
 MainModule.controller('ModalLogoutCtrl', require('./component/controller/ModalLogoutController'));
 MainModule.controller('ModalAccessDeniedDeCtrl', require('./component/controller/ModalAccessDeniedController'));
+MainModule.controller('SessionDropdownCtrl', require('./component/controller/SessionDropdownController'));
 
 MainModule.factory('AuthenticationService', require('./component/factory/AuthenticationService'));
 

@@ -6,12 +6,19 @@ function getEntrySources(sources) {
 }
 
 var customSources = [
+    '../ng-admin/src/javascripts/ng-admin.js',
     './src/javascripts/custom.js'
+];
+
+var vendorSources = [
+    '../ng-admin/src/javascripts/vendors.js',
+    './src/javascripts/vendors.js'
 ];
 
 module.exports = {
     entry: {
-        'custom': getEntrySources(customSources)
+        'ng-admin-custom': getEntrySources(customSources.concat(vendorSources)),
+        'ng-admin-custom-only': getEntrySources(customSources)
     },
     output: {
         publicPath: "http://drapp.local:9012/",
@@ -24,17 +31,17 @@ module.exports = {
 	},
     module: {
         loaders: [
-            { test: /\.js/, loaders: ['babel'], exclude: /..\/ng-admin\/node_modules\/(?!admin-config)/ },
+            { test: /\.js/, loaders: ['babel'], exclude: /node_modules\/(?!admin-config)/ },
             { test: /\.js/, loaders: ['ng-annotate'] },
-            { test: /\.html$/, loader: 'html' },
+            { test: /\.html$/, loader: 'html' }/*,
             { test: /\.(woff2?|svg|ttf|eot)(\?.*)?$/, loader: 'url' },
             { test: /\.css$/, loader: ExtractTextPlugin.extract('css') },
-            { test: /\.scss$/, loader: ExtractTextPlugin.extract('css!sass') }
+            { test: /\.scss$/, loader: ExtractTextPlugin.extract('css!sass') }*/
         ]
-    },
+    }/*,
     plugins: [
         new ExtractTextPlugin('build/[name].min.css', {
             allChunks: true
         })
-    ]
+    ]*/
 };
