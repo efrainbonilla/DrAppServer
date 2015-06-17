@@ -12,17 +12,46 @@ heroku keys:add
 # deploy
 git push drappi master
 
-
 #run terminal
-heroku run "php -a"
 heroku run git clone https://github.com/marmelab/ng-admin.git web/ng-admin
 
 heroku run bash
-
-make install_ng_admin
-
 
 heroku config:set SYMFONY_ENV=prod
 
 # View and edit file
 heroku plugins:install https://github.com/naaman/heroku-vim
+
+#postgresql
+heroku pg:info
+
+heroku pg:psql
+
+SELECT * FROM pg_catalog.pg_tables;
+
+SELECT '| ' || CASE
+                   WHEN n.nspname = current_schema() THEN quote_ident(c.relname)
+                   ELSE quote_ident(n.nspname)||'.'||quote_ident(c.relname)
+               END ||' |' AS tblname
+FROM pg_catalog.pg_class AS c
+INNER JOIN pg_catalog.pg_namespace AS n ON n.oid = c.relnamespace
+WHERE relkind = 'r'
+    AND n.nspname NOT IN ('pg_catalog',
+                          'pg_toast',
+                          'information_schema')
+ORDER BY n.nspname = current_schema() DESC, pg_catalog.pg_table_is_visible(c.oid) DESC, n.nspname,
+                                                                                        c.relname;
+
+
+SELECT *
+FROM usuarios LIMIT 100;
+
+
+SELECT TABLE_NAME
+FROM information_schema.tables
+WHERE table_schema='public';
+
+
+SELECT *
+FROM information_schema.columns
+WHERE TABLE_NAME = 'usuarios';
