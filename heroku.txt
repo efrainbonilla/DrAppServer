@@ -23,3 +23,6 @@ make install_ng_admin
 
 
 heroku config:set SYMFONY_ENV=prod
+
+# View and edit file
+heroku plugins:install https://github.com/naaman/heroku-vim
