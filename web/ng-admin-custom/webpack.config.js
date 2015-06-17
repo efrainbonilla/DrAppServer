@@ -7,6 +7,7 @@ function getEntrySources(sources) {
 
 var customSources = [
     '../ng-admin/src/javascripts/ng-admin.js',
+    '../ng-admin/build/ng-admin.min.css',
     './src/javascripts/custom.js'
 ];
 
@@ -33,15 +34,15 @@ module.exports = {
         loaders: [
             { test: /\.js/, loaders: ['babel'], exclude: /node_modules\/(?!admin-config)/ },
             { test: /\.js/, loaders: ['ng-annotate'] },
-            { test: /\.html$/, loader: 'html' }/*,
+            { test: /\.html$/, loader: 'html' },
             { test: /\.(woff2?|svg|ttf|eot)(\?.*)?$/, loader: 'url' },
             { test: /\.css$/, loader: ExtractTextPlugin.extract('css') },
-            { test: /\.scss$/, loader: ExtractTextPlugin.extract('css!sass') }*/
+            { test: /\.scss$/, loader: ExtractTextPlugin.extract('css!sass') }
         ]
-    }/*,
+    },
     plugins: [
         new ExtractTextPlugin('build/[name].min.css', {
             allChunks: true
         })
-    ]*/
+    ]
 };
