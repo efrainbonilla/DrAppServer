@@ -1,8 +1,13 @@
 {
-  "addons": [
-    "heroku-postgresql:hobby-dev"
-  ],
-  "scripts": {
-    "postdeploy": "php app/console doctrine:schema:create"
-  }
+  	"addons": [
+    	"heroku-postgresql:hobby-dev"
+  	],
+  	"env": {
+        "SYMFONY_ENV": {
+            "value": "prod"
+        }
+  	},
+  	"scripts": {
+    	"postdeploy": "bash make postdeploy"
+  	}
 }
