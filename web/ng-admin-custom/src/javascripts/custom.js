@@ -12,5 +12,5 @@ require('./Main/MainModule');
 require('./Crud/CrudModule');
 
 angular.module('myApp', [
-	'mainMod', 'crudMod', 'ng-admin', 'http-auth-interceptor', 'boxuk.translation', 'angular-jwt', 'angular-storage'
+	'routeIndex', 'mainMod', 'crudMod', 'ng-admin', 'http-auth-interceptor', 'boxuk.translation', 'angular-jwt', 'angular-storage'
 ]);

@@ -15,7 +15,6 @@ define(function () {
 			if (!modalOpen) {
 				$modal.open({
 					template: loginTemplate,
-					/*templateUrl: 'login.html',*/
 					controller: 'ModalLoginCtrl',
 					backdrop: 'static',
 					size: 'sm',
@@ -48,7 +47,6 @@ define(function () {
 		$scope.logoutConfirm = function() {
 			$modal.open({
 				template: logoutTemplate,
-				/*templateUrl: 'logout.html',*/
 				controller: 'ModalLogoutCtrl',
 				backdrop: 'static',
 				keyboard: false

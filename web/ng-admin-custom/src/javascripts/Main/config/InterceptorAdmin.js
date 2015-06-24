@@ -53,7 +53,7 @@ define(function () {
 
 	    RestangularProvider.addResponseInterceptor(function (data, operation, what, url, response, deferred) {
 
-	        if (operation === 'getList' && what === 'casos') {
+	        if (operation === 'getList' && data && data._embedded) {
 
 	        	console.log(data, operation, what, response);
 	        	return data._embedded.items;

@@ -1,0 +1,57 @@
+
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-lg-4 col-md-offset-4">
+                <div class="login-panel panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Inicio de sesión</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="alert alert-danger" ng-if="errorMessage">
+                             {{ errorMessage }}
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <form role="form" ng-submit="submit(credentials)">
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><i class="fa fa-envelope"></i></div>
+                                            <input type="text" class="form-control" ng-model="credentials.username" placeholder="{{ 'security.login.username_email' | trans }}" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><i class="fa fa-lock"></i></div>
+                                            <input type="password" class="form-control" ng-model="credentials.password" placeholder="{{'form.password' | trans }}" required>
+                                        </div>
+                                    </div>
+                                    <a href="#/lostpassword" title="" class="pull-right">Has olvidado tu contraseña?</a>
+
+                                    <div class="checkbox">
+                                        <label>
+                                            <input name="remember" type="checkbox" value="Remember Me">Recuérdame
+                                        </label>
+                                    </div>
+                                </form>
+                                <button class="btn btn-lg btn-success btn-block" ng-click="submit(credentials)">{{'security.login.submit' | trans}} </button>
+                                <br>
+                                <p class="text-center">O</p>
+
+                                <a class="btn btn-lg btn-block btn-social btn-google">
+                                    <i class="fa fa-google-plus"></i>  Ingresar con Google
+                                </a>
+                                <br>
+                                <p class="text-center">
+                                    <a href="#/register" title="">Registra una cuenta?</a>
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

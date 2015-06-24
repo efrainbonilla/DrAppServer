@@ -6,8 +6,8 @@ module.exports = function (grunt) {
     // Define the configuration for all the tasks
     grunt.initConfig({
         exec: {
-            webpack: './node_modules/webpack/bin/webpack.js',
-            webpack_watch: './node_modules/webpack-dev-server/bin/webpack-dev-server.js --progress --colors'
+            webpack: '../ng-admin/node_modules/webpack/bin/webpack.js',
+            webpack_watch: '../ng-admin/node_modules/webpack-dev-server/bin/webpack-dev-server.js --progress --colors'
         }
     });
 

@@ -1,7 +1,7 @@
 define(function () {
 	'use strict';
 
-	var ModalLoginController = function ($rootScope, $scope, $modalInstance, AuthenticationService) {
+	var ModalLoginController = function ($rootScope, $scope, $modalInstance, AuthenticationService, progression) {
 		$scope.credentials = {
 			username: 'admin',
 			password: '123456'
@@ -16,7 +16,7 @@ define(function () {
 		});
 
 		$scope.submit = function(credentials) {
-			AuthenticationService.login(credentials);
+			AuthenticationService.loginModal(credentials);
 		};
 
 		$scope.cancel = function () {
@@ -24,7 +24,7 @@ define(function () {
 		};
 	};
 
-	ModalLoginController.$inject = ['$rootScope', '$scope', '$modalInstance', 'AuthenticationService'];
+	ModalLoginController.$inject = ['$rootScope', '$scope', '$modalInstance', 'AuthenticationService', 'progression'];
 
 	return ModalLoginController;
 });

@@ -5,6 +5,8 @@ define(function () {
 	var baseApiUrl = location.protocol + '//' + location.hostname + (location.port ? ':' + location.port : '') + '/api/';
 
 	var customHeaderTemplate = require('../view/layoutNavbar.html');
+	var customLayoutTemplate = require('../view/layout.html');
+
     var customDeleteViewTemplate = require('../../Crud/delete/delete.html');
 	var customEditViewTemplate = require('../../Crud/form/edit.html');
 	var customListViewTemplate = require('../../Crud/list/list.html');

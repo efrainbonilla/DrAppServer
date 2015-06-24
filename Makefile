@@ -2,7 +2,7 @@ clear: cache_clear
 
 postinstall: db_database_create db_schema_create fos_user_create translation_dump cache_clear ng_admin_install
 
-postdeploy: db_schema_update fos_user cache_clear
+postdeploy: db_schema_update fos_user_create cache_clear
 
 db_schema_create:
 	app/console doctrine:schema:create

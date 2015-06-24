@@ -6,14 +6,26 @@ function getEntrySources(sources) {
 }
 
 var customSources = [
+    './src/javascripts/index.js',
     '../ng-admin/src/javascripts/ng-admin.js',
-    '../ng-admin/build/ng-admin.min.css',
-    './src/javascripts/custom.js'
+    './src/javascripts/custom.js',
+    '../ng-admin/src/sass/ng-admin.scss',
+    './src/sass/custom.scss'
 ];
 
 var vendorSources = [
     '../ng-admin/src/javascripts/vendors.js',
-    './src/javascripts/vendors.js'
+    './src/javascripts/vendors.js',
+    './node_modules/roboto-fontface/css/roboto-fontface.scss',
+    '../ng-admin/node_modules/font-awesome/scss/font-awesome.scss',
+    '../ng-admin/node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss',
+    './src/javascripts/bower_components/bootstrap-social/bootstrap-social.css',
+    '../ng-admin/node_modules/nprogress/nprogress.css',
+    '../ng-admin/node_modules/humane-js/themes/flatty.css',
+    '../ng-admin/node_modules/textangular/src/textAngular.css',
+    '../ng-admin/node_modules/codemirror/lib/codemirror.css',
+    '../ng-admin/node_modules/codemirror/addon/lint/lint.css',
+    '../ng-admin/node_modules/ui-select/dist/select.css'
 ];
 
 module.exports = {

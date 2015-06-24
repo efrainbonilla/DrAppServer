@@ -5,7 +5,8 @@
     "angular-http-auth": "latest",
     "angular-symfony-translation": "~1.0.0",
     "a0-angular-storage": "latest",
-    "angular-jwt": "latest"
+    "angular-jwt": "latest",
+    "bootstrap-social": "~4.9.1"
   },
   "resolutions": {
     "angular": "~1.3.1"
